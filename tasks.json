@@ -1,0 +1,37 @@
+{
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Apprendre Node.js",
+        "description": "Suivre un tutoriel sur Node.js et installer les outils nécessaires.",
+        "completed": false,
+        "priority": "high",
+        "dueDate": "2024-11-25"
+      },
+      {
+        "id": 2,
+        "title": "Créer le design du Task Manager",
+        "description": "Définir le design de l'interface utilisateur avec un wireframe.",
+        "completed": false,
+        "priority": "medium",
+        "dueDate": "2024-11-22"
+      },
+      {
+        "id": 3,
+        "title": "Configurer l’environnement de développement",
+        "description": "Installer les dépendances nécessaires (Express, Vue/React, etc.).",
+        "completed": true,
+        "priority": "low",
+        "dueDate": "2024-11-20"
+      },
+      {
+        "id": 4,
+        "title": "Tester l’application",
+        "description": "Réaliser des tests unitaires et fonctionnels pour s'assurer de la stabilité.",
+        "completed": false,
+        "priority": "high",
+        "dueDate": "2024-11-30"
+      }
+    ]
+  }
+  

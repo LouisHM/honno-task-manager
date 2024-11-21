@@ -1,12 +1,21 @@
 import { Hono } from 'hono'
-import {MainView} from "./View/mainView";
+import {TaskView} from "./View/taskView";
+import {getTasks} from "./DataAccessObject/TaskDataAccessObject";
+import {serve} from "@hono/node-server";
 
 const app = new Hono()
 
 
 
-app.get('/page', (c) => {
-  return c.html(<MainView/>);
+app.get('/page', async (c) => {
+  const path = "./tasks.json"
+  const tasks = await getTasks(path)
+  return c.html(<TaskView tasks={tasks}/>);
 })
+const port = 3000;
+serve({
+  fetch: app.fetch,
+  port
 
+})
 export default app

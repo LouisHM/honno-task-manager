@@ -1,11 +1,16 @@
+import type {FC} from "hono/jsx";
+import type {Task} from "../Model/Task";
+import {MainView} from "./mainView";
 
 
-
-
-export const TaskView = () => {
+export const TaskView: FC<{tasks:Task[]}> = (props: {tasks: Task[]}) => {
     return (
-        <div>
-            <h1>Hello</h1>
-        </div>
+        <MainView>
+            <div>
+                {props.tasks.map((task:Task) => {
+                    return <h1> {task.title} </h1>
+                })}
+            </div>
+        </MainView>
     )
 }

@@ -1,15 +1,15 @@
 {
-  "name": "hono-task-manager",
+  "name": "node",
+  "type": "module",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy --minify"
+    "dev": "tsx watch src/index.tsx"
   },
   "dependencies": {
+    "@hono/node-server": "^1.13.7",
     "hono": "^4.6.11"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20241022.0",
-    "wrangler": "^3.83.0"
-  },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  }
 }

@@ -1,12 +1,11 @@
-import {TaskView} from "./taskView";
-import {FC} from "hono/jsx";
+import type {FC} from "hono/jsx";
 
 
-export const MainView: FC = () => {
+export const MainView: FC = (props) => {
     return (
         <html>
             <body>
-                <TaskView></TaskView>
+                {props.children}
             </body>
         </html>
     )

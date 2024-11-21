@@ -1,9 +1,11 @@
+import type {priorityType} from "./PriorityEnum"
 
-
-
-
-export class Task {
-    constructor(private id:string, private title: string, private description: string,private priority:string, private completed:boolean, private dueDate:Date){}
-
+export type Task = {
+    id: number;
+    title: string;
+    description: string;
+    completed: boolean;
+    priority: priorityType;
+    dueDate: Date;
 
 }
